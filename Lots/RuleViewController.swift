@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ASValueTrackingSlider
 
 class RuleViewController: UIViewController {
 
@@ -22,6 +21,16 @@ class RuleViewController: UIViewController {
     
     }
 
+    // MARK: - Nagivation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "lotsSegue" {
+            let destination = segue.destination as! LotsViewController
+            destination.participators = participators
+            destination.luckyDogs = luckyDogs
+        }
+    }
+    
+    // MARK: - Action
     @IBAction func addParticipator(_ sender: Any) {
         if participators == 10 {
             return
