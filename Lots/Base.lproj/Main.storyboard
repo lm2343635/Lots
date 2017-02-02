@@ -165,10 +165,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xj-Ax-HlI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdI-QF-DJM">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -200,19 +196,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99176675081253052" green="0.99150246381759644" blue="0.86011964082717896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8xj-Ax-HlI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="3kh-rd-z8u"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8xj-Ax-HlI" secondAttribute="trailing" constant="-16" id="6u3-ys-bBa"/>
                             <constraint firstItem="phD-MS-B4B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="9DV-tt-uip"/>
-                            <constraint firstItem="8xj-Ax-HlI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="PdQ-7P-apT"/>
                             <constraint firstItem="szb-jH-h7z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="RgP-hG-SLB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8xj-Ax-HlI" secondAttribute="bottom" id="YdF-Pc-mdq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="szb-jH-h7z" secondAttribute="trailing" id="qnK-aQ-YPC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="phD-MS-B4B" secondAttribute="trailing" constant="125" id="sEK-zb-w04"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="participatorsLabel" destination="phD-MS-B4B" id="4Oj-QG-9y8"/>
-                        <outlet property="touchView" destination="8xj-Ax-HlI" id="unX-Z3-Zjl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

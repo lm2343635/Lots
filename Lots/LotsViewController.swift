@@ -7,46 +7,52 @@
 //
 
 import UIKit
+import TouchVisualizer
 
-let raduis: CGFloat = 50.0
+let raduis: CGFloat = 30.0
 
 class LotsViewController: UIViewController {
     
     @IBOutlet weak var touchView: UIView!
     @IBOutlet weak var participatorsLabel: UILabel!
     
-    var participators = 4, luckyDogs = 1
+    var participators = 3, luckyDogs = 1
+    var touchCount = 0
     var monitoring = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Allow this view to multiple touch
-        touchView.isMultipleTouchEnabled = true
+        self.view.isMultipleTouchEnabled = true
+        
+        Visualizer.start()
     }
     
     // MARK: - Touch
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        refreshParticipators(touches.count)
-        if touches.count == participators && monitoring {
-            showTouch(touches)
-            showResult()
+        touchCount += touches.count
+        participatorsLabel.text = "\(touchCount)"
+
+        if touchCount == participators && monitoring {
+//            showTouch(touches)
+//            showResult()
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        refreshParticipators(touches.count)
-        if touches.count == participators && monitoring {
-            showTouch(touches)
-            showResult()
-        }
+
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        refreshParticipators(touches.count)
+        touchCount -= touches.count
+
+        participatorsLabel.text = "\(touchCount)"
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        refreshParticipators(touches.count)
+        touchCount -= touches.count
+
+        participatorsLabel.text = "\(touchCount)"
     }
     
     // MARK: - Action
@@ -55,10 +61,7 @@ class LotsViewController: UIViewController {
     }
     
     // MARK: - Service
-    func refreshParticipators(_ participators: Int) {
-        participatorsLabel.text = "\(participators)"
-    }
-    
+
     func showResult() {
         monitoring = false
         let random = createRandomMan(start: 0, end: participators - 1)
@@ -67,22 +70,24 @@ class LotsViewController: UIViewController {
         }
     }
     
-    func showTouch(_ touches: Set<UITouch>) {
-        for touch in touches {
-            self.view.addSubview(createTouchCircle(inPoint: touch.location(in: self.view)))
-        }
-    }
-    
-    func createTouchCircle(inPoint: CGPoint) -> UIView! {
+    // Create a touch circle for a touch event
+    func createTouchCircle(_ touch: UITouch) {
+        let inPoint = touch.location(in: self.view)
         let view = UIView(frame: CGRect(x: inPoint.x - raduis,
                                         y: inPoint.y - raduis,
                                         width: 2 * raduis,
                                         height: 2 * raduis))
         view.backgroundColor = UIColor.lightGray
         view.layer.cornerRadius = raduis
-        return view
+        touchView.addSubview(view)
     }
 
+    func clearAllCircle() {
+        touchView.subviews.forEach { (view) in
+            view.removeFromSuperview()
+        }
+    }
+    
     // Create random
     func createRandomMan(start: Int, end: Int) ->() ->Int! {
         var nums = [Int]();

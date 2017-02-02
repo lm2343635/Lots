@@ -10,7 +10,7 @@ import UIKit
 
 class RuleViewController: UIViewController {
 
-    var participators = 4, luckyDogs = 1
+    var participators = 3, luckyDogs = 1
     
     @IBOutlet weak var participatorLabel: UILabel!
     @IBOutlet weak var luckyDogsLabel: UILabel!
@@ -32,7 +32,7 @@ class RuleViewController: UIViewController {
     
     // MARK: - Action
     @IBAction func addParticipator(_ sender: Any) {
-        if participators == 10 {
+        if participators == 5 {
             return
         }
         participators += 1
