@@ -187,10 +187,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participators" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szb-jH-h7z">
-                                <rect key="frame" x="187" y="33" width="117" height="21"/>
+                                <rect key="frame" x="178" y="33" width="126" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="ldE-zu-BFG"/>
                                     <constraint firstAttribute="height" constant="21" id="y0d-uv-fQn"/>
+                                    <constraint firstAttribute="width" constant="126" id="yJN-QS-Fcm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" red="0.99577969310000003" green="0.48415919689999998" blue="0.27524908920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

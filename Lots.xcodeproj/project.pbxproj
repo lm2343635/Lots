@@ -540,9 +540,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6ANM44X2CJ;
 				INFOPLIST_FILE = Lots/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pw.fczm.Lots;
+				PRODUCT_BUNDLE_IDENTIFIER = pw.fczm.lots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lots/Lots-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -558,9 +558,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6ANM44X2CJ;
 				INFOPLIST_FILE = Lots/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pw.fczm.Lots;
+				PRODUCT_BUNDLE_IDENTIFIER = pw.fczm.lots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lots/Lots-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
