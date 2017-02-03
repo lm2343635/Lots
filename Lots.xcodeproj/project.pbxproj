@@ -16,6 +16,8 @@
 		E41B31351E39AEF700AD8347 /* LotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B31341E39AEF700AD8347 /* LotsTests.swift */; };
 		E41B31401E39AEF700AD8347 /* LotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41B313F1E39AEF700AD8347 /* LotsUITests.swift */; };
 		E43F39121E42FCD600BEFC7A /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F39111E42FCD600BEFC7A /* RuleViewController.swift */; };
+		E49BC0BA1E44CD5E00241004 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E49BC0BC1E44CD5E00241004 /* InfoPlist.strings */; };
+		E49BC0C11E44CFC900241004 /* AutoGenStrings.py in Resources */ = {isa = PBXBuildFile; fileRef = E49BC0C01E44CFC900241004 /* AutoGenStrings.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		E41B31411E39AEF700AD8347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43F39111E42FCD600BEFC7A /* RuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
 		E43F39131E42FFB800BEFC7A /* Lots-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lots-Bridging-Header.h"; sourceTree = "<group>"; };
+		E49BC0B31E44CC4200241004 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E49BC0B41E44CC4200241004 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E49BC0BD1E44CD6500241004 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E49BC0BE1E44CD7000241004 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E49BC0C01E44CFC900241004 /* AutoGenStrings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStrings.py; sourceTree = "<group>"; };
 		EF3629114A5AB499B9815648 /* Pods-Lots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lots/Pods-Lots.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,13 +132,15 @@
 			isa = PBXGroup;
 			children = (
 				E41B311F1E39AEF700AD8347 /* AppDelegate.swift */,
-				E43F39111E42FCD600BEFC7A /* RuleViewController.swift */,
 				E41B31211E39AEF700AD8347 /* LotsViewController.swift */,
+				E43F39111E42FCD600BEFC7A /* RuleViewController.swift */,
+				E43F39131E42FFB800BEFC7A /* Lots-Bridging-Header.h */,
+				E41B31281E39AEF700AD8347 /* LaunchScreen.storyboard */,
 				E41B31231E39AEF700AD8347 /* Main.storyboard */,
 				E41B31261E39AEF700AD8347 /* Assets.xcassets */,
-				E41B31281E39AEF700AD8347 /* LaunchScreen.storyboard */,
 				E41B312B1E39AEF700AD8347 /* Info.plist */,
-				E43F39131E42FFB800BEFC7A /* Lots-Bridging-Header.h */,
+				E49BC0BC1E44CD5E00241004 /* InfoPlist.strings */,
+				E49BC0C01E44CFC900241004 /* AutoGenStrings.py */,
 			);
 			path = Lots;
 			sourceTree = "<group>";
@@ -167,6 +176,7 @@
 				E41B311A1E39AEF700AD8347 /* Resources */,
 				0EA96D7143B7BB447E04A117 /* [CP] Embed Pods Frameworks */,
 				F7139717541D55BBC6C3AB89 /* [CP] Copy Pods Resources */,
+				E49BC0BF1E44CFAA00241004 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +260,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = E41B31131E39AEF700AD8347;
 			productRefGroup = E41B311D1E39AEF700AD8347 /* Products */;
@@ -269,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41B312A1E39AEF700AD8347 /* LaunchScreen.storyboard in Resources */,
+				E49BC0BA1E44CD5E00241004 /* InfoPlist.strings in Resources */,
 				E41B31271E39AEF700AD8347 /* Assets.xcassets in Resources */,
 				E41B31251E39AEF700AD8347 /* Main.storyboard in Resources */,
+				E49BC0C11E44CFC900241004 /* AutoGenStrings.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +333,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		E49BC0BF1E44CFAA00241004 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python ${SRCROOT}/${TARGET_NAME}/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}";
 		};
 		F7139717541D55BBC6C3AB89 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -385,6 +411,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E41B31241E39AEF700AD8347 /* Base */,
+				E49BC0B31E44CC4200241004 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -393,8 +420,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				E41B31291E39AEF700AD8347 /* Base */,
+				E49BC0B41E44CC4200241004 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E49BC0BC1E44CD5E00241004 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E49BC0BD1E44CD6500241004 /* zh-Hans */,
+				E49BC0BE1E44CD7000241004 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -404,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -454,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

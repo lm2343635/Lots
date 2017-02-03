@@ -9,7 +9,7 @@
 import UIKit
 import TouchVisualizer
 
-let raduis: CGFloat = 50.0
+let raduis: CGFloat = 45.0
 let touchColor = UIColor(red: 52.0/255.0, green: 152.0/255.0, blue: 219.0/255.0, alpha: 0.8)
 let luckyColor = UIColor.red
 

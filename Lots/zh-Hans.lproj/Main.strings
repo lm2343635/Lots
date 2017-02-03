@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Lucky Dogs"; ObjectID = "1sQ-W6-Emf"; */
+"1sQ-W6-Emf.text" = "幸运儿";
+
+/* Class = "UILabel"; text = "Participators"; ObjectID = "6xJ-AO-KDc"; */
+"6xJ-AO-KDc.text" = "参与者";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "7jY-AP-y3w"; */
+"7jY-AP-y3w.normalTitle" = "开始";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "N2a-dG-tUt"; */
+"N2a-dG-tUt.text" = "1";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "d4H-wG-hSo"; */
+"d4H-wG-hSo.text" = "3";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "phD-MS-B4B"; */
+"phD-MS-B4B.text" = "0";
+
+/* Class = "UILabel"; text = "Participators"; ObjectID = "szb-jH-h7z"; */
+"szb-jH-h7z.text" = "位参与者加入";
+
+/* Class = "UILabel"; text = "Introduction for this app: Click add or minus button to decide the number of participators and lucky dogs. Just start, put your and other participators' fingers on the screen. Points for lucky dogs will become red!"; ObjectID = "a3C-3V-W56"; */
+"a3C-3V-W56.text" = "使用指南：点击加减按钮决定参与者和幸运儿数量。点击开始，将你们的手指放在屏幕上，幸运儿所触摸的点将会变为红色！";

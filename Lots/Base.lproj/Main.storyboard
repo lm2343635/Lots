@@ -22,6 +22,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="G1I-wA-PlF">
+                                <rect key="frame" x="110" y="48" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DZj-AH-OBh"/>
+                                    <constraint firstAttribute="height" constant="100" id="nAl-Li-yxD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3C-3V-W56">
+                                <rect key="frame" x="16" y="148" width="288" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="Nk7-g2-VrT"/>
+                                </constraints>
+                                <string key="text">Introduction for this app: Click add or minus button to decide the number of participators and lucky dogs. Just start, put your and other participators' fingers on the screen. Points for lucky dogs will become red!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99804645780000001" green="0.75278216600000003" blue="0.32650139929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jY-AP-y3w">
                                 <rect key="frame" x="16" y="494" width="288" height="54"/>
                                 <color key="backgroundColor" red="0.99577969312667847" green="0.48415919689167897" blue="0.27524908923982222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,13 +124,6 @@
                                 <color key="textColor" red="0.99577969310000003" green="0.48415919689999998" blue="0.27524908920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="G1I-wA-PlF">
-                                <rect key="frame" x="110" y="48" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="DZj-AH-OBh"/>
-                                    <constraint firstAttribute="height" constant="100" id="nAl-Li-yxD"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99173098802566528" green="0.99082952372626787" blue="0.85777450256641408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -125,6 +135,9 @@
                             <constraint firstItem="G1I-wA-PlF" firstAttribute="centerX" secondItem="zhN-cR-fm6" secondAttribute="centerX" id="NS7-im-gW1"/>
                             <constraint firstItem="PRe-XT-Mpi" firstAttribute="top" secondItem="qzs-8t-Uvn" secondAttribute="bottom" constant="131" id="NZK-LN-b1v"/>
                             <constraint firstItem="PRe-XT-Mpi" firstAttribute="top" secondItem="2xI-2p-t7c" secondAttribute="bottom" constant="144" id="RAV-3W-E7v"/>
+                            <constraint firstItem="a3C-3V-W56" firstAttribute="top" secondItem="KcW-pS-5N6" secondAttribute="bottom" constant="128" id="V1w-1C-bMS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a3C-3V-W56" secondAttribute="trailing" id="ZCc-WZ-iuE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="a3C-3V-W56" secondAttribute="leading" id="aFP-tB-MWq"/>
                             <constraint firstItem="PRe-XT-Mpi" firstAttribute="top" secondItem="6xJ-AO-KDc" secondAttribute="bottom" constant="148" id="e0F-lt-EZE"/>
                             <constraint firstItem="PRe-XT-Mpi" firstAttribute="top" secondItem="WNo-9O-0ab" secondAttribute="bottom" constant="89" id="h42-ol-053"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2xI-2p-t7c" secondAttribute="trailing" constant="94" id="iEb-v9-HEo"/>
