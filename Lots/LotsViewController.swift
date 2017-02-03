@@ -26,6 +26,7 @@ class LotsViewController: UIViewController {
         self.view.isMultipleTouchEnabled = true
         
         Visualizer.start()
+
     }
     
     // MARK: - Touch
@@ -37,21 +38,16 @@ class LotsViewController: UIViewController {
 //            showTouch(touches)
 //            showResult()
         }
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 
     }
-    
+
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         touchCount -= touches.count
-
         participatorsLabel.text = "\(touchCount)"
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         touchCount -= touches.count
-
         participatorsLabel.text = "\(touchCount)"
     }
     

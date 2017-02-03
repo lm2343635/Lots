@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TouchVisualizer
 
 class RuleViewController: UIViewController {
 
@@ -18,7 +19,11 @@ class RuleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Visualizer.stop()
     }
 
     // MARK: - Nagivation
