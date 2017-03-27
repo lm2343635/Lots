@@ -2,7 +2,7 @@
 Lucky Dogs is drawing lots iOS app to choose one or more persons from serval participators randomly.
 In Lucky Dogs, click add or minus button to decide the number of participators and lucky dogs. Just start, put your and other participators' fingers on the screen. Points for lucky dogs will become red!
 
-![Lucky Dogs](https://raw.githubusercontent.com/lm2343635/Lots/master/screenshoot/lots.png)
+![Lucky Dogs](https://raw.githubusercontent.com/lm2343635/Lots/master/screenshot/lots.png)
 
 Luck Dogs is an open source software. If your like this app, please give me a star.
 
