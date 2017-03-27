@@ -11,14 +11,16 @@ import TouchVisualizer
 
 class RuleViewController: UIViewController {
 
-    var participators = 3, luckyDogs = 1
+    var participators = 3, luckyDogs = 1, maxParticipators = 5
     
     @IBOutlet weak var participatorLabel: UILabel!
     @IBOutlet weak var luckyDogsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            maxParticipators = 10
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +39,7 @@ class RuleViewController: UIViewController {
     
     // MARK: - Action
     @IBAction func addParticipator(_ sender: Any) {
-        if participators == 5 {
+        if participators == maxParticipators {
             return
         }
         participators += 1

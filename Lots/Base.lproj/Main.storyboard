@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qLz-5M-woV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qLz-5M-woV">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,12 +29,12 @@
                                     <constraint firstAttribute="height" constant="100" id="nAl-Li-yxD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3C-3V-W56">
-                                <rect key="frame" x="16" y="148" width="288" height="173"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3C-3V-W56">
+                                <rect key="frame" x="16" y="148" width="288" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="173" id="Nk7-g2-VrT"/>
+                                    <constraint firstAttribute="height" constant="220" id="qzO-SU-8tn"/>
                                 </constraints>
-                                <string key="text">Introduction for this app: Click add or minus button to decide the number of participators and lucky dogs. Just start, put your and other participators' fingers on the screen. Points for lucky dogs will become red!</string>
+                                <string key="text">Introduction for this app: Click add or minus button to decide the number of participators and lucky dogs. Just start, put your and other participators' fingers on the screen. Points for lucky dogs will become red! Support 5 participators on iPhone or 10 participators at most.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.99804645780000001" green="0.75278216600000003" blue="0.32650139929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
