@@ -21,4 +21,4 @@
 "szb-jH-h7z.text" = "位参与者加入";
 
 /* Class = "UILabel"; text = "Introduction for this app: Click add or minus button to decide the number of participators and lucky dogs. Just start, put your and other participators' fingers on the screen. Points for lucky dogs will become red!"; ObjectID = "a3C-3V-W56"; */
-"a3C-3V-W56.text" = "使用指南：点击加减按钮决定参与者和幸运儿数量。点击开始，将你们的手指放在屏幕上，幸运儿所触摸的点将会变为红色！iPhone最多支持5台设备，iPad最多支持10台设备。";
+"a3C-3V-W56.text" = "使用指南：（1）点击加减按钮决定参与者和幸运儿数量。（2）点击开始，将你们的手指放在屏幕上。（3）幸运儿所触摸的点将会变为红色！* iPhone最多支持5台设备，iPad最多支持10台设备。";

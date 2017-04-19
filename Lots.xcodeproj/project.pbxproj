@@ -40,6 +40,9 @@
 /* Begin PBXFileReference section */
 		2E6ADD887D9A9F4A4BC5338E /* Pods_Lots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EF36EEECE8411332B9D09A /* Pods-Lots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lots/Pods-Lots.release.xcconfig"; sourceTree = "<group>"; };
+		BA29D6C71EA0ACBF00F1B1E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BA29D6C81EA0ACBF00F1B1E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		BA29D6C91EA0ACBF00F1B1E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E41B311C1E39AEF700AD8347 /* Lots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41B311F1E39AEF700AD8347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E41B31211E39AEF700AD8347 /* LotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +264,7 @@
 				en,
 				Base,
 				"zh-Hans",
+				ja,
 			);
 			mainGroup = E41B31131E39AEF700AD8347;
 			productRefGroup = E41B311D1E39AEF700AD8347 /* Products */;
@@ -412,6 +416,7 @@
 			children = (
 				E41B31241E39AEF700AD8347 /* Base */,
 				E49BC0B31E44CC4200241004 /* zh-Hans */,
+				BA29D6C81EA0ACBF00F1B1E6 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 			children = (
 				E41B31291E39AEF700AD8347 /* Base */,
 				E49BC0B41E44CC4200241004 /* zh-Hans */,
+				BA29D6C71EA0ACBF00F1B1E6 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -430,6 +436,7 @@
 			children = (
 				E49BC0BD1E44CD6500241004 /* zh-Hans */,
 				E49BC0BE1E44CD7000241004 /* en */,
+				BA29D6C91EA0ACBF00F1B1E6 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
